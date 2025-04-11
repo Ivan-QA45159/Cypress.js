@@ -95,7 +95,7 @@ describe('Проверка авторизации', function () {
 
         cy.wait(500)
 
-        cy.get(result_page.title).contains('Такого логина или пароля нет'); // Проверяю совп. текст
+        cy.get(result_page.title).contains('Авторизация прошла успешно'); // Проверяю совп. текст
         cy.get(result_page.title).should('be.visible'); // Текст виден пользователю
         cy.get('.link').should('be.visible');
     })
